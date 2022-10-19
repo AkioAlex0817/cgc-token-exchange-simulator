@@ -21,7 +21,7 @@ export class TcpChannel {
       this.send(`connect|${token}`);
     });
 
-    this.client.on('error', (err) => {
+    this.client.on('error', (err:any) => {
       console.log('Channel error: ', err);
       this.client?.end();
     });
@@ -33,7 +33,7 @@ export class TcpChannel {
       });
     });
 
-    this.client.on('data', (data) => {
+    this.client.on('data', (data:any) => {
       this.handleIncomingData(data.toString());
     });
 
