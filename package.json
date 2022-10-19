@@ -1,0 +1,38 @@
+{
+  "name": "cgc-js-sdk",
+  "version": "0.1.0",
+  "description": "CatheonGaming center sdk",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "rm -rf ./dist && tsc",
+    "build-windows": "rmdir /s /q dist && tsc",
+    "build-origin": "tsc"
+  },
+  "keywords": [
+    "cgc",
+    "api",
+    "sdk"
+  ],
+  "author": "CatheonGaming",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.7.2",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "uuid": "^9.0.0"
+  }
+}
